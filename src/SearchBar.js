@@ -1,9 +1,6 @@
 import { useState } from "react";
 
 function SearchBar({ filterBrands, onBrandCheckboxChange }) {
-    console.log("Brands MapQ: ");
-    console.log(typeof filterBrands);
-
     const handleCheckboxChange = (position, isChecked) => {
         const updatedItem = filterBrands[position]
         updatedItem.display = isChecked
